@@ -9,6 +9,7 @@ mediaTwitterURL = "#"
 mediaInstagramURL = "#"
 mediaYouTubeURL = "#"
 mediaDiscordURL = ""
+screenshotsTooltip = "스크린샷"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/mchlauncher/sample"
