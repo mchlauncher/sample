@@ -10,6 +10,7 @@ mediaInstagramURL = "#"
 mediaYouTubeURL = "#"
 mediaDiscordURL = ""
 mediaSoopURL = "#"
+mediaChzzkURL = "#"
 screenshotsTooltip = "스크린샷"
 
 [ejs.settings]

@@ -3197,6 +3197,15 @@ input:checked + .toggleSwitchSlider:before {
     fill: url('#soopFill')
 }
 
+/* Chzzk icon colors. */
+#chzzkSVG:hover,
+#chzzkURL:focus #chzzkSVG {
+    fill: #00FFA3FF;
+}
+#chzzkSVG:active {
+    fill: #00FFA3FF;
+}
+
 /*******************************************************************************
  *                                                                             *
  * Landing View (Bottom Styles)                                                *
