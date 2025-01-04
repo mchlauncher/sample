@@ -5,7 +5,7 @@ title = "Sample"
 
 [ejs.landing]
 mediaGitHubURL = "https://github.com/mchlauncher/sample"
-mediaTwitterURL = "#"
+mediaXURL = "#"
 mediaInstagramURL = "#"
 mediaYouTubeURL = "#"
 mediaDiscordURL = ""
