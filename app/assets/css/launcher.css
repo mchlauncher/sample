@@ -3188,6 +3188,15 @@ input:checked + .toggleSwitchSlider:before {
     fill: #657ac4;
 }
 
+/* Soop icon colors. */
+#soopSVG:hover,
+#soopURL:focus #soopSVG {
+    fill: url('#soopFill')
+}
+#soopSVG:active {
+    fill: url('#soopFill')
+}
+
 /*******************************************************************************
  *                                                                             *
  * Landing View (Bottom Styles)                                                *
