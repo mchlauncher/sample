@@ -3226,7 +3226,8 @@ input:checked + .toggleSwitchSlider:before {
 #mojang_status_icon {
     font-size: 30px;
     color: #848484;
-    margin-left: 15px;
+    margin-top: -5px;
+    margin-left: 5px;
     font-family: 'sans-serif';
 }
 
