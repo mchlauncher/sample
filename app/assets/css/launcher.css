@@ -1895,6 +1895,16 @@ input:checked + .toggleSwitchSlider:before {
     padding: 6px 16px;
 }
 
+#resolutionSettingsContainer {
+    position: relative;
+    left: 50px;
+    top: 10px;
+}
+
+#resolutionSettingsContainer > .settingsSelectSelected {
+    padding: 1px;
+}
+
 /* Style the arrow inside the select element. */
 .settingsSelectSelected:after {
     position: absolute;
@@ -2495,7 +2505,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 #landingContainer > #lower > #left #content {
     position: relative;
-    top: 25px;
+    /* top: 10px; */
     display: inline-flex;
     line-height: 24px;
     left: 50px;
@@ -2522,6 +2532,7 @@ input:checked + .toggleSwitchSlider:before {
     height: 100%;
     width: 35%;
     display: inline-flex;
+    justify-content: center;
 }
 
 /*******************************************************************************

@@ -110,6 +110,33 @@ document.getElementById('screenshotsMediaButton').onclick = async e => {
     shell.openPath(screenshotDir);
 };
 
+// 게임 해상도 변경
+document.addEventListener('DOMContentLoaded', () => {
+    const resolutionDropdown = document.getElementById('resolutionDropdown');
+    const currentResolution = ConfigManager.getGameWidth() + 'x' + ConfigManager.getGameHeight();
+    let optionExists = false;
+    for (let i = 0; i < resolutionDropdown.options.length; i++) {
+        if (resolutionDropdown.options[i].value === currentResolution) {
+            optionExists = true;
+            resolutionDropdown.options[i].selected = true;
+            break;
+        }
+    }
+    if (!optionExists) {
+        const newOption = document.createElement('option');
+        newOption.value = currentResolution;
+        newOption.text = currentResolution;
+        newOption.selected = true;
+        resolutionDropdown.appendChild(newOption);
+    }
+    resolutionDropdown.addEventListener('change', function() {
+        const [width, height] = this.value.split('x');
+        ConfigManager.setGameWidth(width);
+        ConfigManager.setGameHeight(height);
+        ConfigManager.save();
+    });
+});
+
 // Bind launch button
 document.getElementById('launch_button').addEventListener('click', async e => {
     loggerLanding.info('Launching game..')

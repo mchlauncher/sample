@@ -325,8 +325,30 @@ function fullSettingsSave() {
     saveSettingsValues()
     saveModConfiguration()
     ConfigManager.save()
+    settingResolutionChange()
     saveDropinModConfiguration()
     saveShaderpackSettings()
+}
+
+// 설정창에서 게임 해상도 변경 했을떄
+function settingResolutionChange() {
+    const resolutionDropdown = document.getElementById('resolutionDropdown');
+    const currentResolution = ConfigManager.getGameWidth() + 'x' + ConfigManager.getGameHeight();
+    let optionExists = false;
+    for (let i = 0; i < resolutionDropdown.options.length; i++) {
+        if (resolutionDropdown.options[i].value === currentResolution) {
+            optionExists = true;
+            resolutionDropdown.options[i].selected = true;
+            break;
+        }
+    }
+    if (!optionExists) {
+        const newOption = document.createElement('option');
+        newOption.value = currentResolution;
+        newOption.text = currentResolution;
+        newOption.selected = true;
+        resolutionDropdown.appendChild(newOption);
+    }
 }
 
 /* Closes the settings view and saves all data. */
