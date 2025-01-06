@@ -2458,7 +2458,7 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
     transition: top 2s ease;
     top: 0px;
-    height: 77%;
+    height: 80%;
     display: flex;
 }
 #landingContainer > #upper > #left {
@@ -3060,16 +3060,15 @@ input:checked + .toggleSwitchSlider:before {
 /* Social media icon shared styles. */
 .mediaSVG {
     fill: #ffffff;
-    height: 12px;
     transition: 0.25s ease;
     cursor: pointer;
-    height: 12px;
+    height: 20px;
     width: 25px;
 }
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
 .mediaSVG:active {
-    height: 20px;
+    height: 21px;
 }
 
 /* Social media URL shared styles. */
@@ -3095,7 +3094,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsSVG,
 #screenshotsSVG {
     stroke: #ffffff;
-    height: 15px;
+    height: 20px;
 }
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
@@ -3103,7 +3102,7 @@ input:checked + .toggleSwitchSlider:before {
 .mediaButton:hover #screenshotsSVG,
 .mediaButton:focus #screenshotsSVG,
 .mediaButton:active #screenshotsSVG {
-    height: 23px;
+    height: 25px;
 }
 
 /* Settings tooltip styles. */
