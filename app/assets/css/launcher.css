@@ -3167,7 +3167,7 @@ input:checked + .toggleSwitchSlider:before {
     fill: #000000;
 }
 #xSVG:active {
-    fill: #000000;
+    fill: #090909;
 }
 
 /* Instagram icon colors. */
